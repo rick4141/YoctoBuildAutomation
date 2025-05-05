@@ -3,6 +3,11 @@
 This document describes how to use the `yocto_automate_docker.py` script to set up a reproducible Yocto Linux image build environment, either using Docker or a native Linux installation.
 
 ---
+
+
+![Yocto Build Automation](images/image.png)
+
+
 **IMPORTANT NOTES:**
 - Be Patient!
 - Have as many cores as you can have.
