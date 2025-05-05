@@ -1,16 +1,19 @@
 #!/bin/bash
 
-# setup_docker.sh - Full automated Yocto build with Docker container
+# yocto_automate_docker.sh - Full automated Yocto build with Docker container
 
 python3 yocto_automate_docker.py \
-    --build-image \
-    --clone-poky \
-    --install-yocto-deps \
-    --machine k26-smk \
-    --target-image core-image-sato \
-    --container kria_builder \
-    --image ubuntu:22.04 \
-    --poky-branch langdale \
-    --poky-local my-kria \
-    --yocto-release langdale \
-    --meta-layers sources/meta-xilinx sources/meta-kria
+  --board k26-smk-kv \
+  --container yocto_builder \
+  --config config.json \
+  --yocto-release kirkstone \
+  --poky-branch kirkstone \
+  --force \
+  --auto-install \
+  --install-yocto-deps \
+  --clone-poky \
+  --clone-poky-location container \
+  --meta-layers \
+    https://github.com/Xilinx/meta-xilinx.git#rel-2023.1 \
+    https://github.com/Xilinx/meta-kria.git#rel-2023.1 \
+  --build-image

@@ -1,0 +1,47 @@
+{
+  "boards": {
+    "k26-smk-kv": {
+      "machine": "k26-smk-kv",
+      "poky_branch": "kirkstone",
+      "yocto_release": "kirkstone",
+      "target_image": "kria-image-full-cmdline",
+      "layers": [
+        {
+          "name": "meta-xilinx",
+          "uri": "https://github.com/Xilinx/meta-xilinx.git",
+          "branch": "rel-2023.1"
+        },
+        {
+          "name": "meta-kria",
+          "uri": "https://github.com/Xilinx/meta-kria.git",
+          "branch": "rel-2023.1"
+        },
+        {
+          "name": "meta-openembedded/meta-oe",
+          "uri": "https://github.com/openembedded/meta-openembedded.git",
+          "branch": "kirkstone"
+        },
+        {
+          "name": "meta-openembedded/meta-python",
+          "uri": "https://github.com/openembedded/meta-openembedded.git",
+          "branch": "kirkstone"
+        },
+        {
+          "name": "meta-openembedded/meta-networking",
+          "uri": "https://github.com/openembedded/meta-openembedded.git",
+          "branch": "kirkstone"
+        },
+        {
+          "name": "meta-openembedded/meta-filesystems",
+          "uri": "https://github.com/openembedded/meta-openembedded.git",
+          "branch": "kirkstone"
+        },
+        {
+          "name": "meta-virtualization",
+          "uri": "https://github.com/openembedded/meta-virtualization.git",
+          "branch": "kirkstone"
+        }
+      ]
+    }
+  }
+}

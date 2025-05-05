@@ -1,0 +1,5 @@
+*.log
+
+yocto_project/
+
+yocto_project_logs/
